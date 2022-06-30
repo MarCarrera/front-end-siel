@@ -20975,6 +20975,13 @@ body .bi:before {
     font-weight: 700
 }
 
+.page-heading .h4,
+.page-heading h4 {
+    font-weight: 570;
+    margin: 2rem 0rem 0rem
+    
+}
+
 .page-title-headings {
     align-items: center;
     display: flex;
