@@ -21127,3 +21127,10 @@ a {
 .icon-mid:before {
     vertical-align: middle
 }
+.flecha	{
+	display: flex;
+	width: 26px;
+    margin-top: 20px;
+    margin-right: -10px;
+    margin-left: -13px;
+}
