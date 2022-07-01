@@ -73,20 +73,6 @@
                                             <div class="form-body">
                                                 <div >
                                                     <div class="col-md-4">
-                                                        <label>Avatar</label>
-                                                    </div>
-                                                    <div class="col-md-8">
-                                                        <div class="form-group has-icon-left">
-                                                            <div class="position-relative">
-                                                                <input type="text" class="form-control"
-                                                                    placeholder="Name" id="first-name-icon">
-                                                                <div class="form-control-icon">
-                                                                    <i class="bi bi-person"></i>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-4">
                                                         <label>Nombre(s)</label>
                                                     </div>
                                                     <div class="col-md-8">
@@ -115,21 +101,21 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-md-4">
-                                                        <label>Correo Electrónico Personal</label>
+                                                        <label>Edad</label>
                                                     </div>
                                                     <div class="col-md-8">
                                                         <div class="form-group has-icon-left">
                                                             <div class="position-relative">
-                                                                <input type="email" class="form-control"
-                                                                    placeholder="Email" id="first-name-icon">
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="Name" id="first-name-icon">
                                                                 <div class="form-control-icon">
-                                                                    <i class="bi bi-envelope"></i>
+                                                                    <i class="bi bi-person"></i>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-4">
-                                                        <label>Correo Electrónico Institucional</label>
+                                                        <label>Correo Electrónico Personal</label>
                                                     </div>
                                                     <div class="col-md-8">
                                                         <div class="form-group has-icon-left">
@@ -186,7 +172,7 @@
                                                     </div>
                                                     <!--<div class="col-12 d-flex justify-content-end">
                                                         <button type="submit"
-                                                            class="btn btn-primary me-1 mb-1">Guardar</button>
+                                                            class="btn btn-primary me-1 mb-1">Guardar cambios</button>
                                                         <button type="reset"
                                                             class="btn btn-light-secondary me-1 mb-1">Reset</button>
                                                     </div>-->
@@ -244,22 +230,13 @@
             </div>
 
             <div class="page-heading">
-                <!--<div class="page-title">
+                <div class="page-title">
                     <div class="row">
                         <div class="col-12 col-md-6 order-md-1 order-last">
-                            <h3>Form Layout</h3>
-                            <p class="text-subtitle text-muted">Multiple form layouts, you can use</p>
-                        </div>
-                        <div class="col-12 col-md-6 order-md-2 order-first">
-                            <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Form Layout</li>
-                                </ol>
-                            </nav>
+                            <p class="text-subtitle text-muted">Únicamente los campos marcados con * podrán ser editados por el alumno.</p>
                         </div>
                     </div>
-                </div>-->
+                </div>
 
                 <!-- Basic Horizontal form layout section start -->
                 <section id="basic-horizontal-layouts">
@@ -524,8 +501,8 @@
                                                 </div> 
                                                 <!--<div class="col-12 d-flex justify-content-end">
                                                     <button type="submit"
-                                                        class="btn btn-primary me-1 mb-1">Guardar</button>
-                                                    button type="reset" class="btn btn-light-secondary me-1 mb-1">Reset</button>
+                                                        class="btn btn-primary me-1 mb-1">Guardar cambios</button>
+                                                    <button type="reset" class="btn btn-light-secondary me-1 mb-1">Reset</button>
                                                 </div>-->
                                             </div>
                                         </form>
@@ -535,6 +512,9 @@
                         </div>
                     </div>
                 </section>
+                <!-- // Basic multiple Column Form section end -->
+            </div>
+
                 <section id="multiple-column-form">
                     <div class="row match-height">
                         <div class="col-12">
@@ -548,43 +528,69 @@
                                             <div class="row">
                                                 <div class="col-md-6 col-12">
                                                     <div class="form-group">
-                                                        <label for="first-name-column">Id de Estudiante</label>
+                                                        <label for="first-name-column">Nombre(s) *</label>
                                                         <input type="text" id="first-name-column" class="form-control"
                                                             placeholder="First Name" name="fname-column">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6 col-12">
                                                     <div class="form-group">
-                                                        <label for="last-name-column">Correo Electrónico Institucional</label>
-                                                        <input type="text" id="last-name-column" class="form-control"
-                                                            placeholder="Last Name" name="lname-column">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6 col-12">
-                                                    <div class="form-group">
-                                                        <label for="city-column">Institución Eductaviva</label>
+                                                        <label for="city-column">Edad *</label>
                                                         <input type="text" id="city-column" class="form-control"
                                                             placeholder="City" name="city-column">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6 col-12">
                                                     <div class="form-group">
-                                                        <label for="country-floating">Nivel </label>
-                                                        <input type="text" id="country-floating" class="form-control"
-                                                            name="country-floating" placeholder="Country">
+                                                        <label for="last-name-column">Apellidos *</label>
+                                                        <input type="text" id="last-name-column" class="form-control"
+                                                            placeholder="Last Name" name="lname-column">
+                                                    </div>
+                                                </div>
+                                              
+                                                <div class="col-md-6 col-12">
+                                                    <div class="form-group">
+                                                        <label for="company-column">Correo Electrónico Personal *</label>
+                                                        <input type="text" id="company-column" class="form-control"
+                                                            name="company-column" placeholder="Company">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6 col-12">
                                                     <div class="form-group">
-                                                        <label for="company-column">Programa</label>
+                                                        <label for="company-column">Teléfono 1 *</label>
                                                         <input type="text" id="company-column" class="form-control"
                                                             name="company-column" placeholder="Company">
                                                     </div>
                                                 </div> 
+                                                <div class="col-md-6 col-12">
+                                                    <div class="form-group">
+                                                        <label for="company-column">Contraseña *</label>
+                                                        <input type="text" id="company-column" class="form-control"
+                                                            name="company-column" placeholder="Company">
+                                                    </div>
+                                                </div>  
+                                                 
+                                                
+                                                 
+                                                <div class="col-md-6 col-12">
+                                                    <div class="form-group">
+                                                        <label for="company-column">Teléfono 2 *</label>
+                                                        <input type="text" id="company-column" class="form-control"
+                                                            name="company-column" placeholder="Company">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-12">
+                                                    <div class="form-group">
+                                                        <label for="company-column">Repetir contraseña *</label>
+                                                        <input type="text" id="company-column" class="form-control"
+                                                            name="company-column" placeholder="Company">
+                                                    </div>
+                                                </div>
                                                 <div class="col-12 d-flex justify-content-end">
                                                     <button type="submit"
-                                                        class="btn btn-primary me-1 mb-1">Guardar</button>
+                                                    class="btn btn-primary me-1 mb-1">Guardar cambios</button>
                                                     <!--<button type="reset" class="btn btn-light-secondary me-1 mb-1">Reset</button>-->
+                                                    
                                                 </div>
                                             </div>
                                         </form>
@@ -594,8 +600,7 @@
                         </div>
                     </div>
                 </section>
-                <!-- // Basic multiple Column Form section end -->
-            </div>
+               
 
             <!--<div class="page-heading">
                 <section class="section">
