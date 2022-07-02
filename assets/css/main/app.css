@@ -5510,6 +5510,12 @@ fieldset:disabled .btn {
     width: 100%
 }
 
+.card-img-top-e{
+    width: 60%;
+    padding: 20px;
+}
+
+
 .card-img,
 .card-img-top {
     border-top-left-radius: calc(.7rem - 1px);
@@ -8981,7 +8987,9 @@ fieldset:disabled .btn {
 
 .bg-success {
     --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important
+    background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)); !important
+
+    
 }
 
 .bg-info {
