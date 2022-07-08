@@ -11,6 +11,8 @@
     <link rel="shortcut icon" href="assets/images/lodgo/favicon.svg" type="image/x-icon">
     <link rel="shortcut icon" href="assets/images/lodgo/favicon.png" type="image/png">
     <link rel=" stylesheet" href="assets/css/shared/iconly.css">
+    <link rel="stylesheet" href="assets/plugin/components/Font Awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/plugin/whatsapp-chat-support.css">
 
 </head>
 
@@ -96,7 +98,7 @@
                                 <i class="bi bi-grid-1x2-fill"></i>
                                 <span>Visitar English Discoveries</span>
                             </a>
-                        </li>
+                        </li>       
                         <div class="whatsapp_chat_support wcs_fixed_right" id="button-w">
                             <div class="wcs_button wcs_button_circle">
                                 <span class="fa fa-whatsapp"></span>
@@ -338,10 +340,20 @@
             <button type="submit" class="btn btn-primary me-1 mb-1">Inscribirse</button>
         </div>
 
+        <!-- jQuery 1.8+ -->
+        <script src="assets/plugin/components/jQuery/jquery-1.11.3.min.js"></script>
+        <!-- Plugin JS file -->
         <script src="assets/js/app.js"></script>
-
         <script src="assets/js/pages/dashboard.js"></script>
-        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="assets/plugin/components/moment/moment.min.js"></script>
+        <script src="assets/plugin/components/moment/moment-timezone-with-data.min.js"></script>
+        <!-- spanish language (es) -->
+        <script src="assets/plugin/whatsapp-chat-support.js"></script>
+        <script>
+            $('#button-w').whatsappChatSupport({
+                defaultMsg: '',
+            });
+        </script>
 
         <!-- <script>
             $(".selectpicker")

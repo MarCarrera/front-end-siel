@@ -11,6 +11,8 @@
     <link rel="shortcut icon" href="assets/images/lodgo/favicon.svg" type="image/x-icon">
     <link rel="shortcut icon" href="assets/images/lodgo/favicon.png" type="image/png">
     <link rel=" stylesheet" href="assets/css/shared/iconly.css">
+    <link rel="stylesheet" href="assets/plugin/components/Font Awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/plugin/whatsapp-chat-support.css">
 
 </head>
 
@@ -97,6 +99,30 @@
                                 <span>Visitar English Discoveries</span>
                             </a>
                         </li>
+                        <div class="whatsapp_chat_support wcs_fixed_right" id="button-w">
+                                    <div class="wcs_button wcs_button_circle" >
+                                        <span class="fa fa-whatsapp"></span>
+                                    </div>
+    
+                                    <div class="wcs_popup">
+                                        <div class="wcs_popup_close">
+                                            <span class="fa fa-close"></span>
+                                        </div>
+                                        <div class="wcs_popup_header">
+                                            <span class="fa fa-whatsapp"></span>
+                                            <strong>Informes</strong>
+    
+                                            <div class="wcs_popup_header_description">¿Necesidas ayuda? Chatea con
+                                                nosotros en Whatsapp</div>
+    
+                                        </div>
+                                        <div class="wcs_popup_input" data-number="528123861273"
+                                            data-availability='{ "monday":"07:00-22:30", "tuesday":"07:00-22:30", "wednesday":"07:7030-22:30", "thursday":"07:00-22:30", "friday":"07:00-22:30", "saturday":"09:00-18:30", "sunday":"09:00-22:30" }'>
+                                            <input type="text" placeholder="Escribir pregunta!" />
+                                            <i class="fa fa-play"></i>
+                                        </div>
+                                    </div>
+                                </div>
                     </ul>
                 </div>
                 </ul>
@@ -156,11 +182,21 @@
                     </center>
                 </div>
             </section>
-            <!-- Basic Card types section end -->
-        </div>
-        <script src="assets/js/app.js"></script>
-
-        <script src="assets/js/pages/dashboard.js"></script>
+        
+            <!-- jQuery 1.8+ -->
+            <script src="assets/plugin/components/jQuery/jquery-1.11.3.min.js"></script>
+            <!-- Plugin JS file -->
+            <script src="assets/js/app.js"></script>
+            <script src="assets/js/pages/dashboard.js"></script>
+            <script src="assets/plugin/components/moment/moment.min.js"></script>
+            <script src="assets/plugin/components/moment/moment-timezone-with-data.min.js"></script>
+            <!-- spanish language (es) -->
+            <script src="assets/plugin/whatsapp-chat-support.js"></script>
+            <script>
+                $('#button-w').whatsappChatSupport({
+                    defaultMsg: '',
+                });
+            </script>
 
 </body>
 
