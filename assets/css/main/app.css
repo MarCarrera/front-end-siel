@@ -7274,7 +7274,7 @@ fieldset:disabled .btn {
 .carousel-indicators {
     bottom: 0;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     left: 0;
     list-style: none;
     margin-bottom: 1rem;
