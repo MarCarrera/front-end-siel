@@ -5414,7 +5414,9 @@ fieldset:disabled .btn {
     display: flex;
     flex-direction: column;
     min-width: 0;
-    position: relative
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 8px 8px rgba(0,0,0,0.4)
 }
 
 .card>hr {
@@ -8157,6 +8159,11 @@ fieldset:disabled .btn {
 
 .w-100 {
     width: 100% !important
+}
+.w-120 {
+    width: 120% !important;
+    border-radius: 8px;
+    box-shadow: 8px 8px rgba(0,0,0,0.4)
 }
 
 .w-auto {
