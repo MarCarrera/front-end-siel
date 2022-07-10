@@ -3540,6 +3540,14 @@ fieldset:disabled .btn {
     
     
 }
+.btn-primary-k {
+    background-color: #435ebe;
+    border-color: #435ebe;
+    color: #fff;
+   
+    
+    
+}
 
 .btn-check:focus+.btn-primary,
 .btn-primary:focus,
@@ -6558,7 +6566,7 @@ fieldset:disabled .btn {
 }
 
 .modal.modal-static .modal-dialog {
-    transform: scale(1.02)
+    transform: scale(2.02)
 }
 
 .modal-dialog-scrollable {
@@ -6590,7 +6598,9 @@ fieldset:disabled .btn {
     outline: 0;
     pointer-events: auto;
     position: relative;
-    width: 100%
+    width: 100%;
+    
+
 }
 
 .modal-backdrop {
@@ -6618,7 +6628,7 @@ fieldset:disabled .btn {
     border-top-right-radius: calc(.3rem - 1px);
     display: flex;
     flex-shrink: 0;
-    justify-content: space-between;
+    justify-content: center;
     padding: 1rem
 }
 
@@ -6647,6 +6657,17 @@ fieldset:disabled .btn {
     flex-shrink: 0;
     flex-wrap: wrap;
     justify-content: flex-end;
+    padding: .75rem
+}
+.modal-footer-k {
+    align-items: center;
+    border-bottom-left-radius: calc(.3rem - 1px);
+    border-bottom-right-radius: calc(.3rem - 1px);
+    border-top: 1px solid #dee2e6;
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: .75rem
 }
 
@@ -7224,7 +7245,7 @@ fieldset:disabled .btn {
     top: 0;
     transition: opacity .15s ease;
     width: 15%;
-    z-index: 1
+    z-index: 0
 }
 
 @media (prefers-reduced-motion:reduce) {
@@ -8135,7 +8156,7 @@ fieldset:disabled .btn {
 }
 
 .w-100 {
-    width: 120% !important
+    width: 100% !important
 }
 
 .w-auto {
