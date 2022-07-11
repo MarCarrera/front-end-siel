@@ -19680,6 +19680,13 @@ body .bi:before {
 .card .card-content {
     position: relative
 }
+.card-docente {
+    position:relative;
+    top:-70px ;  
+    right:0px ;
+    bottom:0px ; 
+    left:0px ;
+}
 
 .card .card-title {
     font-size: 1.2rem
@@ -19770,6 +19777,13 @@ body .bi:before {
 .pricing .card-highlighted .card-title {
     color: #25396f;
     font-size: 1.8rem
+}
+.data{
+    position: relative;
+    top:0px ;  
+    right:0px ;
+    bottom:50px ; 
+    left:0px ;
 }
 
 .divider {
