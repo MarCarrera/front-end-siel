@@ -116,6 +116,12 @@
                                 <span>Visitar English Discoveries</span>
                             </a>
                         </li>
+                        <li class="sidebar-item active ">
+                            <a href="crear-docente.html" class='sidebar-link'>
+                                <i class="bi bi-grid-1x2-fill"></i>
+                                <span>Alta de Docente</span>
+                            </a>
+                        </li>
                         <div class="whatsapp_chat_support wcs_fixed_right" id="button-w">
                                     <div class="wcs_button wcs_button_circle" >
                                         <span class="fa fa-whatsapp"></span>
@@ -177,8 +183,8 @@
                     <div class="col-xl-4 col-md-6 col-sm-12">
                         <div class="card">
                             <div class="card-content">
-                                <img src="assets/images/samples/motorcycle.jpg" class="card-img-top img-fluid"
-                                    alt="singleminded">
+                                <img src="assets/images/samples/motorcycle.jpg" class="card-img-top fit-image"
+                                id="imagenmuestra" alt="singleminded">
                                 <div class="card-body">
                                     <center>
                                         <h5 class="card-title">Keyla Mariela Carrera Prieto</h5>
@@ -325,13 +331,20 @@
                                                     name="company-column" >
                                             </div>
                                         </div>
-                                        <div class="col-12 d-flex justify-content-end">
-                                            <button type="submit" class="btn btn-primary me-1 mb-1">Guardar
-                                                cambios</button>
-                                            <!--<button type="reset" class="btn btn-light-secondary me-1 mb-1">Reset</button>-->
-
+                                        
+                                        
+                                        
+                                    </div>
+                                    <div class="col-md-5 col-12">
+                                        <div class="form-group">
+                                            <label for="company-column">Elegir foto de perfil</label>
+                                            <input type="file" class="form-control" name="imagen" id="imagen">
                                         </div>
                                     </div>
+                                    <div class="col-12 d-flex justify-content-end">
+                                            <button type="submit" class="btn btn-primary me-1 mb-1">Guardar
+                                                cambios</button>                                       
+                                        </div>
                                 </form>
                             </div>
                         </div>
@@ -353,6 +366,22 @@
             $('#button-w').whatsappChatSupport({
                 defaultMsg: '',
             });
+
+            function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    // Asignamos el atributo src a la tag de imagen
+                    $('#imagenmuestra').attr('src', e.target.result);
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        // El listener va asignado al input
+        $("#imagen").change(function () {
+            readURL(this);
+        });
         </script>
 
 </body>

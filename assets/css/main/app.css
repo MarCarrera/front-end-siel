@@ -951,6 +951,11 @@ progress {
 .blockquote-footer:before {
     content: "— "
 }
+.fit-image{
+    width: 100%;
+    object-fit: cover;
+    height: 300px; /* only if you want fixed height */
+    }
 
 .img-fluid,
 .img-thumbnail {
@@ -1567,6 +1572,7 @@ progress {
         flex: 0 0 auto;
         width: 50%
     }
+
 
     .col-md-7 {
         flex: 0 0 auto;
@@ -5426,6 +5432,20 @@ fieldset:disabled .btn {
     min-width: 0;
     position: relative;
 }
+
+.card-circle {
+    word-wrap: break-word;
+    background-clip: border-box;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    position: relative;
+}
+
 .card-p {
     word-wrap: break-word;
     background-clip: border-box;
@@ -5555,7 +5575,8 @@ fieldset:disabled .btn {
 .card-img,
 .card-img-bottom,
 .card-img-top {
-    width: 100%
+    width: 100%;
+    
 }
 
 .card-img-top-e {
@@ -19682,7 +19703,7 @@ body .bi:before {
 }
 .card-docente {
     position:relative;
-    top:-70px ;  
+    top:0px ;  
     right:0px ;
     bottom:0px ; 
     left:0px ;
