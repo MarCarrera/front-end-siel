@@ -1,147 +1,548 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bauchers de Pago</title>
 
+    <link rel="stylesheet" href="assets/css/main/app.css">
+    <link rel="stylesheet" href="assets/css/main/app-dark.css">
+    <link rel="shortcut icon" href="assets/images/lodgo/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/lodgo/favicon.png" type="image/png">
+    <link rel=" stylesheet" href="assets/css/shared/iconly.css">
+    <link rel="stylesheet" href="assets/plugin/components/Font Awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/plugin/whatsapp-chat-support.css">
 
 
 
 </head>
-<style>
-    .file {
-        visibility: hidden;
-        position: absolute;
-    }
-</style>
 
 <body>
+    <div id="app">
+        <div id="sidebar" class="active">
+            <div class="sidebar-wrapper active">
+                <div class="sidebar-header position-relative">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/images/logo/Lgan1.png" alt="Logo"></a>
+                        </div>
+                        <div class="theme-toggle d-flex gap-2  align-items-center mt-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                aria-hidden="true" role="img" class="iconify iconify--system-uicons" width="20"
+                                height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21">
+                                <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M10.5 14.5c2.219 0 4-1.763 4-3.982a4.003 4.003 0 0 0-4-4.018c-2.219 0-4 1.781-4 4c0 2.219 1.781 4 4 4zM4.136 4.136L5.55 5.55m9.9 9.9l1.414 1.414M1.5 10.5h2m14 0h2M4.135 16.863L5.55 15.45m9.899-9.9l1.414-1.415M10.5 19.5v-2m0-14v-2"
+                                        opacity=".3"></path>
+                                    <g transform="translate(-210 -1)">
+                                        <path d="M220.5 2.5v2m6.5.5l-1.5 1.5"></path>
+                                        <circle cx="220.5" cy="11.5" r="4"></circle>
+                                        <path d="m214 5l1.5 1.5m5 14v-2m6.5-.5l-1.5-1.5M214 18l1.5-1.5m-4-5h2m14 0h2">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                            <div class="form-check form-switch fs-6">
+                                <input class="form-check-input  me-0" type="checkbox" id="toggle-dark">
+                                <label class="form-check-label"></label>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                aria-hidden="true" role="img" class="iconify iconify--mdi" width="20" height="20"
+                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m17.75 4.09l-2.53 1.94l.91 3.06l-2.63-1.81l-2.63 1.81l.91-3.06l-2.53-1.94L12.44 4l1.06-3l1.06 3l3.19.09m3.5 6.91l-1.64 1.25l.59 1.98l-1.7-1.17l-1.7 1.17l.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95l2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85c-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14c.4-.4.82-.76 1.27-1.08c.75-.53 1.93.36 1.85 1.19c-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82c-2.81 3.14-2.7 7.96.31 10.98c3.02 3.01 7.84 3.12 10.98.31Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="sidebar-toggler  x">
+                            <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-menu">
+                    <ul class="menu">
+                        <li class="sidebar-title">Menu</li>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<!-- <label>Imagen:</label>
-<input type="file" class="form-control" name="imagen" id="imagen" maxlength="256" placeholder="Imagen">
-<img src="assets/css/profile/images/rotating_card_profile3.png" width="150px" height="120px" id="imagenmuestra"> -->
+                        <!------------------------INICIA ITEM DESPLEGABLE------------------------>
+                        <li class="sidebar-item active has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-bar-chart-fill"></i>
+                                <span>Inicio</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="index.html">Mi Avance</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="https://www.youtube.com/channel/UCUXpwMzV4Mx5lV_NbnY2Kcw/videos">Tutoriales
+                                        del Curso</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!------------------------INICIA ITEM DESPLEGABLE------------------------>
 
-<div class="col-xl-4 col-md-6 col-sm-12">
-    <div class="card">
-        <div class="card-content">
-            <img src="assets/css/profile/images/rotating_card_profile3.png" id="imagenmuestra"
-                class="card-img-top img-fluid" alt="singleminded">
-            <div class="card-body">
-                <div class="col-12 d-flex justify-content-end">
-                    <!-- <button type="file" class="btn btn-primary me-1 mb-1" name="imagen" id="imagen">Editar
-                        foto</button> -->
-                        <input type="file" class="form-control" name="imagen" id="imagen">
-                </div>          
-            </div>         
-        </div>      
-    </div>  
-</div>
+                        <li class="sidebar-item active ">
+                            <a href="convocatoria.html" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>Ver Convocatoria</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item active ">
+                            <a href="inscripcion.html" class='sidebar-link'>
+                                <i class="bi bi-file-earmark-medical-fill"></i>
+                                <span>Inscripción</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item active ">
+                            <a href="modificar_datos.html" class='sidebar-link'>
+                                <i class="bi bi-pen-fill"></i>
+                                <span>Modificar Datos</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item active ">
+                            <a href="evaluacion_docente.html" class='sidebar-link'>
+                                <i class="bi bi-person-badge-fill"></i>
+                                <span>Evaluación Docente</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item active ">
+                            <a href="referencias_pagina.html" class='sidebar-link'>
+                                <i class="bi bi-life-preserver"></i>
+                                <span>Obtener Referencias de la Página</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item active ">
+                            <a href="http://englishdiscoveries.net/" class='sidebar-link'>
+                                <i class="bi bi-grid-1x2-fill"></i>
+                                <span>Visitar English Discoveries</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item active ">
+                            <a href="crear-docente.html" class='sidebar-link'>
+                                <i class="bi bi-grid-1x2-fill"></i>
+                                <span>Alta de Docente</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item active ">
+                            <a href="baucher_pago.html" class='sidebar-link'>
+                                <i class="bi bi-grid-1x2-fill"></i>
+                                <span>Bauchers de Pago</span>
+                            </a>
+                        </li>
 
-    <!-- <div class="container">
-        <div class="row justify-content-md-center">
-            <div class="ml-2 col-sm-4">
-                <div id="msg"></div>
-                <form method="post" id="image-form" enctype="multipart/form-data" onSubmit="return false;">
-                    <div class="form-group">
-                        <input type="file" name="file" class="file">
-                        <div class="input-group my-3">
-                            <input type="text" class="form-control" disabled placeholder="Cargar imagen" id="file">
-                            <div class="input-group-append">
-                                <button type="button" class="browse btn btn-primary">Browse...</button>
+                        <div class="whatsapp_chat_support wcs_fixed_right" id="button-w">
+                            <div class="wcs_button wcs_button_circle">
+                                <span class="fa fa-whatsapp"></span>
+                            </div>
+
+                            <div class="wcs_popup">
+                                <div class="wcs_popup_close">
+                                    <span class="fa fa-close"></span>
+                                </div>
+                                <div class="wcs_popup_header">
+                                    <span class="fa fa-whatsapp"></span>
+                                    <strong>Informes</strong>
+
+                                    <div class="wcs_popup_header_description">¿Necesidas ayuda? Chatea con
+                                        nosotros en Whatsapp</div>
+
+                                </div>
+                                <div class="wcs_popup_input" data-number="522381900113"
+                                    data-availability='{ "monday":"07:00-22:30", "tuesday":"07:00-22:30", "wednesday":"07:7030-22:30", "thursday":"07:00-22:30", "friday":"07:00-22:30", "saturday":"09:00-18:30", "sunday":"09:00-22:30" }'>
+                                    <input type="text" placeholder="Escribir pregunta!" />
+                                    <i class="fa fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="main">
+        <header class="mb-3">
+            <a href="#" class="burger-btn d-block d-xl-none">
+                <i class="bi bi-justify fs-3"></i>
+            </a>
+        </header>
+
+        <div class="page-heading">
+            <h3>Bauchers de Pago</h3>
+        </div>
+        <section id="custom-file-input">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Subir documento</h4>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6 mb-1">
+                                        <fieldset>
+                                            <div class="input-group">
+                                                <input type="file" class="form-control" id="inputGroupFile04"
+                                                    aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                                <button class="btn btn-primary" type="button"
+                                                    id="inputGroupFileAddon04">Upload</button>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <img src="assets/css/profile/images/rotating_card_profile3.png" id="preview"
-                            class="img-thumbnail">
-                    </div>
-                    <div class="form-group">
-                        <button name="submit" class="btn btn-danger btn-block">Cargar imagen</button>
-                    </div>
-                </form>
+                </div>
             </div>
-        </div>
-    </div> -->
-
-    <script>
-
-function readURL(input) {
-if (input.files && input.files[0]) {
-var reader = new FileReader();
-reader.onload = function(e) {
-// Asignamos el atributo src a la tag de imagen
-$('#imagenmuestra').attr('src', e.target.result);
-}
-reader.readAsDataURL(input.files[0]);
-}
-}
-
-// El listener va asignado al input
-$("#imagen").change(function() {
-readURL(this);
-});
-
-//         $(document).on("click", ".browse", function () {
-//             var file = $(this)
-//                 .parent()
-//                 .parent()
-//                 .parent()
-//                 .find(".file");
-//             file.trigger("click");
-//         });
-//         $('input[type="file"]').change(function (e) {
-//             var fileName = e.target.files[0].name;
-//             $("#file").val(fileName);
-
-//             var reader = new FileReader();
-//             reader.onload = function (e) {
-//                 // get loaded data and render thumbnail.
-//                 document.getElementById("preview").src = e.target.result;
-//             };
-//             // read the image file as a data URL.
-//             reader.readAsDataURL(this.files[0]);
-//         });
+        </section>
 
 
-        
-//             $(document).ready(function(e) {
-//                 $("#image-form").on("submit", function () {
-//                     $("#msg").html('<div class="alert alert-info"><i class="fa fa-spin fa-spinner"></i> Espere por favor...!</div>');
-//                     $.ajax({
-//                         type: "POST",
-//                         url: "ajax/accion.php",
-//                         data: new FormData(this), // Data sent to server, a set of key/value pairs (i.e. form fields and values)
-//                         contentType: false, // The content type used when sending data to the server.
-//                         cache: false, // To unable request pages to be cached
-//                         processData: false, // To send DOMDocument or non processed data file it is set to false
-//                         success: function (data) {
-//                             if (data == 1 || parseInt(data) == 1) {
-//                                 $("#msg").html(
-//                                     '<div class="alert alert-success"><i class="fa fa-thumbs-up"></i> Datos actualizados con éxito.</div>'
-//                                 );
-//                             } else {
-//                                 $("#msg").html(
-//                                     '<div class="alert alert-info"><i class="fa fa-exclamation-triangle"></i> La extensión no es buena, solo prueba con <strong>GIF, JPG, PNG, JPEG</strong>.</div>'
-//                                 );
-//                             }
-//                         },
-//                         error: function (data) {
-//                             $("#msg").html(
-//                                 '<div class="alert alert-danger"><i class="fa fa-exclamation-triangle"></i> Hay algo mal..</div>'
-//                             );
-//                         }
-//                     });
-//                 });
-// });
-    
+        <section id="multiple-column-form">
+            <div class="row match-height">
+                <!-- Basic Tables start -->
+                <section class="section ">
+                    <div class="row match-height">
+                        <div class="col-md-5 col-0">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Bauchers de Pago Autorizados</h4>
+                                </div>
 
-    </script>
+                                <div class="card-body">
+                                    <table class="table" id="table1">
+                                        <thead>
+                                            <tr>
+                                                <th>Id Estudiante</th>
+                                                <th>Documento</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>15486381</td>
+                                                <td>comprobante_pago.pdf</td>
+
+                                                <td>
+                                                    <a href="#" class="btn icon btn-success" id="OpenBtn"><i
+                                                            class="bi bi-eye"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>15486548</td>
+                                                <td>comprobante_pago.pdf</td>
+
+                                                <td>
+                                                    <a href="#" class="btn icon btn-success"><i
+                                                            class="bi bi-eye"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>15486847</td>
+                                                <td>comprobante_pago.pdf</td>
+
+                                                <td>
+                                                    <a href="#" class="btn icon btn-success"><i
+                                                            class="bi bi-eye"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>15480915</td>
+                                                <td>comprobante_pago.pdf</td>
+
+                                                <td>
+                                                    <a href="#" class="btn icon btn-success"><i
+                                                            class="bi bi-eye"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1548635623</td>
+                                                <td>comprobante_pago.pdf</td>
+
+                                                <td>
+                                                    <a href="#" class="btn icon btn-success"><i
+                                                            class="bi bi-eye"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>15484521</td>
+                                                <td>comprobante_pago.pdf</td>
+
+                                                <td>
+                                                    <a href="#" class="btn icon btn-success"><i
+                                                            class="bi bi-eye"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>15484788</td>
+                                                <td>comprobante_pago.pdf</td>
+
+                                                <td>
+                                                    <a href="#" class="btn icon btn-success"><i
+                                                            class="bi bi-eye"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>15480045</td>
+                                                <td>comprobante_pago.pdf</td>
+
+                                                <td>
+                                                    <a href="#" class="btn icon btn-success"><i
+                                                            class="bi bi-eye"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>15487810</td>
+                                                <td>comprobante_pago.pdf</td>
+
+                                                <td>
+                                                    <a href="#" class="btn icon btn-success"><i
+                                                            class="bi bi-eye"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>15480450</td>
+                                                <td>comprobante_pago.pdf</td>
+
+                                                <td>
+                                                    <a href="#" class="btn icon btn-success"><i
+                                                            class="bi bi-eye"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>15481147</td>
+                                                <td>comprobante_pago.pdf</td>
+
+                                                <td>
+                                                    <a href="#" class="btn icon btn-success"><i
+                                                            class="bi bi-eye"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>15483602</td>
+                                                <td>comprobante_pago.pdf</td>
+
+                                                <td>
+                                                    <a href="#" class="btn icon btn-success"><i
+                                                            class="bi bi-eye"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>15487325</td>
+                                                <td>comprobante_pago.pdf</td>
+
+                                                <td>
+                                                    <a href="#" class="btn icon btn-success"><i
+                                                            class="bi bi-eye"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>15489635</td>
+                                                <td>comprobante_pago.pdf</td>
+
+                                                <td>
+                                                    <a href="#" class="btn icon btn-success"><i
+                                                            class="bi bi-eye"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>15480258</td>
+                                                <td>comprobante_pago.pdf</td>
+
+                                                <td>
+                                                    <a href="#" class="btn icon btn-success"><i
+                                                            class="bi bi-eye"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>15486935</td>
+                                                <td>comprobante_pago.pdf</td>
+
+                                                <td>
+                                                    <a href="#" class="btn icon btn-success"><i
+                                                            class="bi bi-eye"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>15487210</td>
+                                                <td>comprobante_pago.pdf</td>
+
+                                                <td>
+                                                    <a href="#" class="btn icon btn-success"><i
+                                                            class="bi bi-eye"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>15480124</td>
+                                                <td>comprobante_pago.pdf</td>
+
+                                                <td>
+                                                    <a href="#" class="btn icon btn-success"><i
+                                                            class="bi bi-eye"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>15482558</td>
+                                                <td>comprobante_pago.pdf</td>
+
+                                                <td>
+                                                    <a href="#" class="btn icon btn-success"><i
+                                                            class="bi bi-eye"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>15483695</td>
+                                                <td>comprobante_pago.pdf</td>
+
+                                                <td>
+                                                    <a href="#" class="btn icon btn-success"><i
+                                                            class="bi bi-eye"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>15483550</td>
+                                                <td>comprobante_pago.pdf</td>
+
+                                                <td>
+                                                    <a href="#" class="btn icon btn-success"><i
+                                                            class="bi bi-eye"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>15480554</td>
+                                                <td>comprobante_pago.pdf</td>
+
+                                                <td>
+                                                    <a href="#" class="btn icon btn-success"><i
+                                                            class="bi bi-eye"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>15482219</td>
+                                                <td>comprobante_pago.pdf</td>
+
+                                                <td>
+                                                    <a href="#" class="btn icon btn-success"><i
+                                                            class="bi bi-eye"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>15480361</td>
+                                                <td>comprobante_pago.pdf</td>
+
+                                                <td>
+                                                    <a href="#" class="btn icon btn-success"><i
+                                                            class="bi bi-eye"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>15486441</td>
+                                                <td>comprobante_pago.pdf</td>
+
+                                                <td>
+                                                    <a href="#" class="btn icon btn-success"><i
+                                                            class="bi bi-eye"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>15481443</td>
+                                                <td>comprobante_pago.pdf</td>
+
+                                                <td>
+                                                    <a href="#" class="btn icon btn-success"><i
+                                                            class="bi bi-eye"></i></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="col-xl-12 col-md-9 col-sm-6">-->
+                        <!-- <section id="custom-file-input">
+                            <div class="row"> -->
+                                <div class="col-7">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h4 class="card-title">Vista del Documento</h4>
+                                        </div>
+                                        <div class="card-content">
+                                            <div class="card-body">
+                                                <center>
+
+                                                    <div class="ExternalFiles">
+                                                        <iframe src="assets/docs/Intermediate Scope and Sequence.pdf"
+                                                        width="470" height="620" frameborder="0"></iframe>
+                                                    </div>
+
+
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--- </div>
+                        </section> -->
+                            </div>
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- Basic Tables end -->
+
+
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <div class="col-12 d-flex justify-content-end">
+            <button type="submit" class="btn btn-primary me-1 mb-1">Inscribirse</button>
+        </div> -->
+
+        <!-- jQuery 1.8+ -->
+        <script src="assets/plugin/components/jQuery/jquery-1.11.3.min.js"></script>
+        <!-- Plugin JS file -->
+        <script src="assets/js/app.js"></script>
+        <script src="assets/js/extensions/datatables.js"></script>
+        <script src="assets/js/pages/dashboard.js"></script>
+        <script src="assets/plugin/components/moment/moment.min.js"></script>
+        <script src="assets/plugin/components/moment/moment-timezone-with-data.min.js"></script>
+        <!-- spanish language (es) -->
+        <script src="assets/plugin/whatsapp-chat-support.js"></script>
+        <script>
+            $('#button-w').whatsappChatSupport({
+                defaultMsg: '',
+            });
+
+            $("#OpenBtn").click(function () {
+                $("#myModal").modal();
+            });
+
+            $("#CloseBtn").click(function () {
+                $("#myModal").modal('hide');
+            });
+        </script>
+
+
+
 </body>
-
-
 
 </html>
