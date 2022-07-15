@@ -1067,6 +1067,8 @@ progress {
     justify-content: space-evenly;
 }
 
+
+
 .row>* {
     flex-shrink: 0;
     margin-top: var(--bs-gutter-y);
