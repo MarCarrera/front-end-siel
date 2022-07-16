@@ -11,7 +11,7 @@ my-section{
     align-items: center;
 }
 my-section img{
-    width: 350px;
+    width: 0px;
     margin: 0 50px;
 }
 my-section .info-d{
@@ -36,7 +36,7 @@ my-section .info-i{
 .efecto-basico1{
     left: 0px;
     opacity: 1;
-    transition: 1s linear;
+    transition: 2s linear;
 }
 .basico2{
     transform: scale(0.5);
@@ -45,6 +45,7 @@ my-section .info-i{
 .efecto-basico2{
     transform: scale(1);
     opacity: 1;
+    transition: 2s linear;
 }
 .basico3{
     position: relative;
@@ -54,7 +55,7 @@ my-section .info-i{
 .efecto-basico3{
     opacity: 1;
     bottom: 1;
-    transition: 1s linear;
+    transition: 2s linear;
 }
 .basico4{  
     transform: scale(0.5);
@@ -63,7 +64,7 @@ my-section .info-i{
 .efecto-basico4{
     transform: scale(1);
     opacity: 1;
-    transition: 1s linear;
+    transition: 2s linear;
 }
 
 
@@ -89,8 +90,8 @@ my-section .info-i{
     animation-delay: 2.7s;
 }
 .animate{
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
     animation-fill-mode: both;
     -webkit-animation-fill-mode: both;
 }

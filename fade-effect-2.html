@@ -174,24 +174,17 @@
             <h3>Instituto Tecnológico de Villahermosa</h3>
         </div>
 
-        <!-- <section><h1>Mi Avance</h1></section> -->
-
-
-
-
-
-
         <section class="section">
             <div class="row">
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h5 class="card-title">Mi Avance</h5>
+                            <h4 class="card-title">Mi Avance</h4>
                         </div>
                         <div class="card-body">
                             <div class="column">
-                                <my-section>
-                                    <img class="col-lg-4 col-sm-2 one animate fadeUp"  src="assets/images/levels/basic1.png">
+                                <my-section data-bs-toggle="modal" data-bs-target="#galleryModal-1">
+                                    <img class="col-lg-4 col-sm-4 basico1" id="basico1" src="assets/images/levels/basic1.png">
                                     <div class="col-lg-7 info-d">
                                         <h4>Descripción del Nivel</h4>
                                         <p>
@@ -227,10 +220,10 @@
                                             nivel y tipo de texto.
                                         </p>
                                     </div>
-                                    <img class="col-lg-4 col-sm-2 two animate fadeUp" src="assets/images/levels/basic2.png">
+                                    <img class="col-lg-4 col-sm-4 basico2" id="basico2" src="assets/images/levels/basic2.png">
                                 </my-section>
                                 <my-section>
-                                    <img class="col-lg-4 col-sm-2 three animate fadeDown"   src="assets/images/levels/basic3.png">
+                                    <img class="col-lg-4 col-sm-4 basico3" id="basico3"   src="assets/images/levels/basic3.png">
                                     <div class="col-lg-7 info-d">
                                         <h4>Descripción del Nivel</h4>
                                         <p>
@@ -266,89 +259,9 @@
                                             nivel y tipo de texto.
                                         </p>
                                     </div>
-                                    <img class="col-lg-4 col-sm-2 four animate fadeLeft"  src="assets/images/levels/basic4.png">
-                                </my-section>
-                               
+                                    <img class="col-lg-4 col-sm-4 basico4" id="basico4" src="assets/images/levels/basic4.png">
+                                </my-section>  
                             </div>
-                            <!-- <section>
-                                <img class="basico1" id="basico1" src="assets/images/levels/basic1.png">
-                                <div class="info">
-                                    <h2>Descripción del Nivel</h2>
-                                    <p>
-                                        En los niveles Básicos, los estudiantes acceden y hacen uso de
-                                        información oral y escrita necesaria para la comunicación diaria
-                                        a través de una variedad de medios y tipos de texto. Los
-                                        estudiantes están expuestos
-                                        y participar en interacciones orales sobre temas familiares en
-                                        la vida cotidiana.
-                                        situaciones Los textos orales y escritos de cada curso del nivel
-                                        Básico contienen
-                                        vocabulario simple y estructuras sintácticas básicas relevantes
-                                        para ese
-                                        nivel y tipo de texto.
-                                    </p>
-                                </div>             
-                            </section>
-
-                            <section>
-                                <img class="basico2" id="basico2" src="assets/images/levels/basic2.png">
-                                <div class="info">
-                                    <h2>Descripción del Nivel</h2>
-                                    <p>
-                                        En los niveles Básicos, los estudiantes acceden y hacen uso de
-                                        información oral y escrita necesaria para la comunicación diaria
-                                        a través de una variedad de medios y tipos de texto. Los
-                                        estudiantes están expuestos
-                                        y participar en interacciones orales sobre temas familiares en
-                                        la vida cotidiana.
-                                        situaciones Los textos orales y escritos de cada curso del nivel
-                                        Básico contienen
-                                        vocabulario simple y estructuras sintácticas básicas relevantes
-                                        para ese
-                                        nivel y tipo de texto.
-                                    </p>
-                                </div>             
-                            </section>
-
-                            <section>
-                                <img class="basico3" id="basico3" src="assets/images/levels/basic3.png">
-                                <div class="info">
-                                    <h2>Descripción del Nivel</h2>
-                                    <p>
-                                        En los niveles Básicos, los estudiantes acceden y hacen uso de
-                                        información oral y escrita necesaria para la comunicación diaria
-                                        a través de una variedad de medios y tipos de texto. Los
-                                        estudiantes están expuestos
-                                        y participar en interacciones orales sobre temas familiares en
-                                        la vida cotidiana.
-                                        situaciones Los textos orales y escritos de cada curso del nivel
-                                        Básico contienen
-                                        vocabulario simple y estructuras sintácticas básicas relevantes
-                                        para ese
-                                        nivel y tipo de texto.
-                                    </p>
-                                </div>             
-                            </section>
-
-                             <section>
-                                <img class="basico4" id="basico4" src="assets/images/levels/basico4.png">
-                                <div class="info">
-                                    <h2>Descripción del Nivel</h2>
-                                    <p>
-                                        En los niveles Básicos, los estudiantes acceden y hacen uso de
-                                        información oral y escrita necesaria para la comunicación diaria
-                                        a través de una variedad de medios y tipos de texto. Los
-                                        estudiantes están expuestos
-                                        y participar en interacciones orales sobre temas familiares en
-                                        la vida cotidiana.
-                                        situaciones Los textos orales y escritos de cada curso del nivel
-                                        Básico contienen
-                                        vocabulario simple y estructuras sintácticas básicas relevantes
-                                        para ese
-                                        nivel y tipo de texto.
-                                    </p>
-                                </div>             
-                            </section> -->
                         </div>
                     </div>
                 </div>
@@ -444,11 +357,6 @@
                             </a>
                         </div>
                     </div>
-                    <!-- <div class="modal-footer-k">
-                        <button type="button" class="btn btn-primary">Libros del
-                            Curso</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -466,17 +374,7 @@
                     <div class="modal-body">
 
                         <div id="Gallerycarousel-2" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                            <!-- <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#Gallerycarousel" data-bs-slide-to="0"
-                                    class="active" aria-current="true" aria-label="Slide 1"></button>
-
-                                <button type="button" data-bs-target="#Gallerycarousel" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#Gallerycarousel" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#Gallerycarousel" data-bs-slide-to="3"
-                                    aria-label="Slide 4"></button>
-                            </div> -->
+                            </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div clas="card">
@@ -555,11 +453,6 @@
                             </a>
                         </div>
                     </div>
-                    <!-- <div class="modal-footer-k">
-                        <button type="button" class="btn btn-primary">Libros del
-                            Curso</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -653,11 +546,6 @@
                             </a>
                         </div>
                     </div>
-                    <!-- <div class="modal-footer-k">
-                        <button type="button" class="btn btn-primary">Libros del
-                            Curso</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -675,17 +563,6 @@
                     <div class="modal-body">
 
                         <div id="Gallerycarousel-4" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                            <!-- <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#Gallerycarousel" data-bs-slide-to="0"
-                                    class="active" aria-current="true" aria-label="Slide 1"></button>
-
-                                <button type="button" data-bs-target="#Gallerycarousel" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#Gallerycarousel" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#Gallerycarousel" data-bs-slide-to="3"
-                                    aria-label="Slide 4"></button>
-                            </div> -->
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div clas="card">
@@ -784,18 +661,7 @@
                     </div>
                     <div class="modal-body">
 
-                        <div id="Gallerycarousel-5" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                            <!-- <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#Gallerycarousel" data-bs-slide-to="0"
-                                    class="active" aria-current="true" aria-label="Slide 1"></button>
-
-                                <button type="button" data-bs-target="#Gallerycarousel" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#Gallerycarousel" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#Gallerycarousel" data-bs-slide-to="3"
-                                    aria-label="Slide 4"></button>
-                            </div> -->
+                        <div id="Gallerycarousel-5" class="carousel slide carousel-fade" data-bs-ride="carousel">                       
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div clas="card">
@@ -876,11 +742,6 @@
                             </a>
                         </div>
                     </div>
-                    <!-- <div class="modal-footer-k">
-                        <button type="button" class="btn btn-primary">Libros del
-                            Curso</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -896,19 +757,7 @@
                         </button>
                     </div>
                     <div class="modal-body">
-
                         <div id="Gallerycarousel-6" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                            <!-- <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#Gallerycarousel" data-bs-slide-to="0"
-                                    class="active" aria-current="true" aria-label="Slide 1"></button>
-
-                                <button type="button" data-bs-target="#Gallerycarousel" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#Gallerycarousel" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#Gallerycarousel" data-bs-slide-to="3"
-                                    aria-label="Slide 4"></button>
-                            </div> -->
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div clas="card">
@@ -986,11 +835,6 @@
                             </a>
                         </div>
                     </div>
-                    <!-- <div class="modal-footer-k">
-                        <button type="button" class="btn btn-primary">Libros del
-                            Curso</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -1006,19 +850,7 @@
                         </button>
                     </div>
                     <div class="modal-body">
-
-                        <div id="Gallerycarousel-7" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                            <!-- <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#Gallerycarousel" data-bs-slide-to="0"
-                                    class="active" aria-current="true" aria-label="Slide 1"></button>
-
-                                <button type="button" data-bs-target="#Gallerycarousel" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#Gallerycarousel" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#Gallerycarousel" data-bs-slide-to="3"
-                                    aria-label="Slide 4"></button>
-                            </div> -->
+                        <div id="Gallerycarousel-7" class="carousel slide carousel-fade" data-bs-ride="carousel">             
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div clas="card">
@@ -1094,12 +926,7 @@
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             </a>
                         </div>
-                    </div>
-                    <!-- <div class="modal-footer-k">
-                        <button type="button" class="btn btn-primary">Libros del
-                            Curso</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div> -->
+                    </div>                   
                 </div>
             </div>
         </div>
@@ -1115,19 +942,7 @@
                         </button>
                     </div>
                     <div class="modal-body">
-
-                        <div id="Gallerycarousel-8" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                            <!-- <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#Gallerycarousel" data-bs-slide-to="0"
-                                    class="active" aria-current="true" aria-label="Slide 1"></button>
-
-                                <button type="button" data-bs-target="#Gallerycarousel" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#Gallerycarousel" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#Gallerycarousel" data-bs-slide-to="3"
-                                    aria-label="Slide 4"></button>
-                            </div> -->
+                        <div id="Gallerycarousel-8" class="carousel slide carousel-fade" data-bs-ride="carousel">                         
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div clas="card">
@@ -1206,11 +1021,6 @@
                             </a>
                         </div>
                     </div>
-                    <!-- <div class="modal-footer-k">
-                        <button type="button" class="btn btn-primary">Libros del
-                            Curso</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -1226,7 +1036,6 @@
                         </button>
                     </div>
                     <div class="modal-body">
-
                         <div id="Gallerycarousel-9" class="carousel slide carousel-fade" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
@@ -1307,11 +1116,6 @@
                             </a>
                         </div>
                     </div>
-                    <!-- <div class="modal-footer-k">
-                        <button type="button" class="btn btn-primary">Libros del
-                            Curso</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -1329,17 +1133,6 @@
                     <div class="modal-body">
 
                         <div id="Gallerycarousel-10" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                            <!-- <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#Gallerycarousel" data-bs-slide-to="0"
-                                    class="active" aria-current="true" aria-label="Slide 1"></button>
-
-                                <button type="button" data-bs-target="#Gallerycarousel" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#Gallerycarousel" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#Gallerycarousel" data-bs-slide-to="3"
-                                    aria-label="Slide 4"></button>
-                            </div> -->
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div clas="card">
@@ -1419,11 +1212,6 @@
                             </a>
                         </div>
                     </div>
-                    <!-- <div class="modal-footer-k">
-                        <button type="button" class="btn btn-primary">Libros del
-                            Curso</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -1449,7 +1237,8 @@
         <script src="assets/plugin/components/moment/moment.min.js"></script>
         <script src="assets/plugin/components/moment/moment-timezone-with-data.min.js"></script>
         <!-- spanish language (es) -->
-        <script src="assets/js/extensions/mi_avance.js"></script>
+        <script src="assets/js/extensions/fade-effect-2.js"></script>
+        
 
 
         <script>
