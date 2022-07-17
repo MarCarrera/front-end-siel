@@ -4,34 +4,56 @@
     box-sizing: border-box;
 }
 my-section{
-    height: 50vh;
+    height: 50%;
     font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-my-section img{
-    width: 0px;
+/* my-section img{
+    width: 44%;
     margin: 0 50px;
 }
 my-section .info-d{
-    width: 650px;
+    width: 56%;
     padding-right: 50px;
     font-size: 17px;
     text-align: justify;
     position: relative;
+} */
+img item{
+    width: 44%;
+    margin: 0 50px;
+    
 }
-my-section .info-i{
+.info-d{
+    width: 56%;
+    padding-right: 80px;
+    font-size: 17px;
+    text-align: justify;
+    position: relative;
+}
+.info-i{
+    width: 56%;
+    padding-left: 80px;
+    font-size: 17px;
+    text-align: justify;
+    position: relative;
+}
+/* my-section .info-i{
     width: 650px;
     padding-left: 50px;
     font-size: 17px;
     text-align: justify;
     position: relative;
-}
+} */
 .basico1{
     position: relative;
     left: -50px;
     opacity: 0;
+    width: 44%;
+    height: 40%;
+    padding-top: 5%;
 }
 .efecto-basico1{
     left: 0px;
@@ -41,6 +63,9 @@ my-section .info-i{
 .basico2{
     transform: scale(0.5);
     opacity: 0;
+    width: 44%;
+    height: 40%;
+    padding-top: 5%;
 }
 .efecto-basico2{
     transform: scale(1);
@@ -51,15 +76,21 @@ my-section .info-i{
     position: relative;
     left: 6px;
     opacity: 0;
+    width: 44%;
+    height: 40%;
+    padding-top: 5%;
 }
 .efecto-basico3{
     opacity: 1;
     bottom: 1;
-    transition: 3s linear;
+    transition: 2s linear;
 }
 .basico4{  
     transform: scale(0.5);
     opacity: 0;
+    width: 44%;
+    height: 40%;
+    padding-top: 5%;
 }
 .efecto-basico4{
     transform: scale(1);
@@ -70,6 +101,9 @@ my-section .info-i{
     position: relative;
     left: -50px;
     opacity: 0;
+    width: 44%;
+    height: 40%;
+    padding-top: 5%;
 }
 .efecto-basico5{
     left: 0px;
@@ -77,50 +111,86 @@ my-section .info-i{
     transition: 2s linear;
 }
 .inter1{
-    position: relative;
-    left: -50px;
+    transform: scale(0.5);
     opacity: 0;
+    width: 44%;
+    height: 40%;
+    padding-top: 5%;
 }
 .efecto-inter1{
-    left: 0px;
+    transform: scale(1);
     opacity: 1;
     transition: 2s linear;
 }
 .inter2{
-    transform: scale(0.5);
+    position: relative;
+    left: 6px;
     opacity: 0;
+    width: 44%;
+    height: 40%;
+    padding-top: 5%;
 }
 .efecto-inter2{
+    opacity: 1;
+    bottom: 1;
+    transition: 2s linear;
+}
+.inter3{  
+    transform: scale(0.5);
+    opacity: 0;
+    width: 44%;
+    height: 40%;
+    padding-top: 5%;
+}
+.efecto-inter3{
     transform: scale(1);
     opacity: 1;
     transition: 2s linear;
 }
-.inter3{
+.inter4{
     position: relative;
-    left: 6px;
+    left: -50px;
     opacity: 0;
-}
-.efecto-inter3{
-    opacity: 1;
-    bottom: 1;
-    transition: 3s linear;
-}
-.inter4{  
-    transform: scale(0.5);
-    opacity: 0;
+    width: 44%;
+    height: 40%;
+    padding-top: 5%;
 }
 .efecto-inter4{
-    transform: scale(1);
+    left: 0px;
     opacity: 1;
     transition: 2s linear;
 }
 .inter5{
-    position: relative;
-    left: -50px;
+    transform: scale(0.5);
     opacity: 0;
+    width: 44%;
+    height: 40%;
+    padding-top: 5%;
 }
 .efecto-inter5{
-    left: 0px;
+    transform: scale(1);
     opacity: 1;
     transition: 2s linear;
+}
+
+@media screen and (max-width: 280px){
+    .info-d{
+        font-size: 14px;
+       
+    }
+    .info-i{
+        font-size: 14px;
+       
+    }
+}
+@media screen and (max-width: 820px){
+    .info-d{
+        font-size: 14px;
+       
+    }
+    .info-i{
+        font-size: 14px;
+       
+    }
+
 }
