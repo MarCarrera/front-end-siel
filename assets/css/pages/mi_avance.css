@@ -51,9 +51,7 @@ img item{
     position: relative;
     left: -50px;
     opacity: 0;
-    width: 44%;
-    height: 40%;
-    padding-top: 5%;
+   
 }
 .efecto-basico1{
     left: 0px;
@@ -63,9 +61,6 @@ img item{
 .basico2{
     transform: scale(0.5);
     opacity: 0;
-    width: 44%;
-    height: 40%;
-    padding-top: 5%;
 }
 .efecto-basico2{
     transform: scale(1);
@@ -76,9 +71,6 @@ img item{
     position: relative;
     left: 6px;
     opacity: 0;
-    width: 44%;
-    height: 40%;
-    padding-top: 5%;
 }
 .efecto-basico3{
     opacity: 1;
@@ -88,9 +80,6 @@ img item{
 .basico4{  
     transform: scale(0.5);
     opacity: 0;
-    width: 44%;
-    height: 40%;
-    padding-top: 5%;
 }
 .efecto-basico4{
     transform: scale(1);
@@ -101,9 +90,6 @@ img item{
     position: relative;
     left: -50px;
     opacity: 0;
-    width: 44%;
-    height: 40%;
-    padding-top: 5%;
 }
 .efecto-basico5{
     left: 0px;
@@ -113,9 +99,6 @@ img item{
 .inter1{
     transform: scale(0.5);
     opacity: 0;
-    width: 44%;
-    height: 40%;
-    padding-top: 5%;
 }
 .efecto-inter1{
     transform: scale(1);
@@ -126,9 +109,6 @@ img item{
     position: relative;
     left: 6px;
     opacity: 0;
-    width: 44%;
-    height: 40%;
-    padding-top: 5%;
 }
 .efecto-inter2{
     opacity: 1;
@@ -138,9 +118,6 @@ img item{
 .inter3{  
     transform: scale(0.5);
     opacity: 0;
-    width: 44%;
-    height: 40%;
-    padding-top: 5%;
 }
 .efecto-inter3{
     transform: scale(1);
@@ -151,9 +128,6 @@ img item{
     position: relative;
     left: -50px;
     opacity: 0;
-    width: 44%;
-    height: 40%;
-    padding-top: 5%;
 }
 .efecto-inter4{
     left: 0px;
@@ -163,9 +137,6 @@ img item{
 .inter5{
     transform: scale(0.5);
     opacity: 0;
-    width: 44%;
-    height: 40%;
-    padding-top: 5%;
 }
 .efecto-inter5{
     transform: scale(1);

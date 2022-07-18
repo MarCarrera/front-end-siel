@@ -951,11 +951,13 @@ progress {
 .blockquote-footer:before {
     content: "— "
 }
-.fit-image{
+
+.fit-image {
     width: 100%;
     object-fit: cover;
-    height: 300px; /* only if you want fixed height */
-    }
+    height: 300px;
+    /* only if you want fixed height */
+}
 
 .img-fluid,
 .img-thumbnail {
@@ -999,10 +1001,10 @@ progress {
 }
 
 .containerk {
-   
+
     padding-inline-start: 20px;
     padding-bottom: 30px;
-    display:flex;
+    display: flex;
     justify-content: space-evenly;
 }
 
@@ -5461,6 +5463,7 @@ fieldset:disabled .btn {
     border-radius: 8px;
     box-shadow: 8px 8px rgba(0, 0, 0, 0.4)
 }
+
 .card>hr {
     margin-left: 0;
     margin-right: 0
@@ -5514,6 +5517,7 @@ fieldset:disabled .btn {
 .card-text:last-child {
     margin-bottom: 0
 }
+
 .card-text-level:last-child {
     margin-right: 33px;
     margin-left: 33px;
@@ -5521,6 +5525,7 @@ fieldset:disabled .btn {
     padding-right: 22px;
     padding-left: 22px;
 }
+
 .card-link+.card-link {
     margin-left: 1rem
 }
@@ -5577,7 +5582,7 @@ fieldset:disabled .btn {
 .card-img-bottom,
 .card-img-top {
     width: 100%;
-    
+
 }
 
 .card-img-top-e {
@@ -8214,7 +8219,7 @@ fieldset:disabled .btn {
 
 .w-120 {
     width: 120% !important;
-    
+
 }
 
 .w-auto {
@@ -19702,12 +19707,13 @@ body .bi:before {
 .card .card-content {
     position: relative
 }
+
 .card-docente {
-    position:relative;
-    top:0px ;  
-    right:0px ;
-    bottom:0px ; 
-    left:0px ;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
 }
 
 .card .card-title {
@@ -19800,12 +19806,13 @@ body .bi:before {
     color: #25396f;
     font-size: 1.8rem
 }
-.data{
+
+.data {
     position: relative;
-    top:0px ;  
-    right:0px ;
-    bottom:50px ; 
-    left:0px ;
+    top: 0px;
+    right: 0px;
+    bottom: 50px;
+    left: 0px;
 }
 
 .divider {
@@ -22175,4 +22182,10 @@ a {
 .wcs_debug strong {
     width: 125px;
     display: inline-block;
+}
+
+.my-animation {
+    display: inline-block;
+    animation: bounce;
+    animation-duration: 3.5s; 
 }
