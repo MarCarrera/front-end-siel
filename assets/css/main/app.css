@@ -5521,7 +5521,6 @@ fieldset:disabled .btn {
     padding-right: 22px;
     padding-left: 22px;
 }
-
 .card-link+.card-link {
     margin-left: 1rem
 }
@@ -20889,7 +20888,7 @@ body .bi:before {
 .table.table-md tr th,
 .table.table-sm tr td,
 .table.table-sm tr th {
-    padding: 1rem
+    padding: 0.5rem
 }
 
 .table-lg.dataTable-table tr td,
