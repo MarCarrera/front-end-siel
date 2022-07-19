@@ -22186,6 +22186,7 @@ a {
 
 .my-animation {
     display: inline-block;
-    animation: bounce;
+    animation: bounceInDown;
     animation-duration: 3.5s; 
+
 }
