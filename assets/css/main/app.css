@@ -21243,7 +21243,10 @@ a {
 .icon-mid:before {
     vertical-align: middle
 }
-
+.style-text{
+    font-size: 4rem;
+    margin-top: 3rem
+}
 .btn-wsp {
     position: fixed;
     width: 60px;
