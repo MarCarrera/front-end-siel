@@ -382,7 +382,7 @@ screen and (-ms-high-contrast:active) {
     --bs-body-font-weight: 400;
     --bs-body-line-height: 1.5;
     --bs-body-color: #607080;
-    --bs-body-bg: #f2f7ff
+    --bs-body-bg: #f2f7ff;
 }
 
 *,
@@ -22195,4 +22195,43 @@ a {
 }
 
 
-/**/
+/*CALENDARIO B*/
+
+/*  Calendar wrapper */
+.calendar-container {
+    position: relative;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    font: 13px Helvetica, Arial, san-serif;
+    display: inline-block;
+    padding: 20px;
+    float: right;
+  }
+  
+  @media (max-width: 991.98px) {
+    .calendar-container {
+      padding: 0;
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+    .calendar-container {
+      padding: 0;
+      width: 100%;
+    }
+  }
+  
+  .calendar-container:after {
+    clear: both;
+  }
+
+  .calendar {
+    width: 100%;
+    padding: 0;
+  }
+  
+  /* ---------------------------------------Calendar Header---------------------------------------- */
+  
+  
