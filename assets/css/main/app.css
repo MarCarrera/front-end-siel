@@ -7303,7 +7303,7 @@ fieldset:disabled .btn {
     top: 0;
     transition: opacity .15s ease;
     width: 15%;
-    z-index: 0
+    z-index: 1
 }
 
 @media (prefers-reduced-motion:reduce) {
@@ -9080,8 +9080,7 @@ fieldset:disabled .btn {
 
 .bg-success {
     --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity));
-     !important
+    background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important
 }
 
 .bg-info {
@@ -22195,7 +22194,7 @@ a {
 }
 
 
-/*CALENDARIO B*/
+/*------------------------------------------------CALENDARIO B-------------------------------------------------------------------------*/
 
 /*  Calendar wrapper */
 .calendar-container {
@@ -22204,7 +22203,7 @@ a {
     height: 100%;
     width: 100%;
     background: #fff;
-    font: 13px Helvetica, Arial, san-serif;
+    /* font: 13px Helvetica, Arial, san-serif; */
     display: inline-block;
     padding: 20px;
     float: right;
@@ -22261,7 +22260,7 @@ h5,
 .h5 {
   line-height: 1.5;
   font-weight: 400;
-  font-family: "Lato", Arial, sans-serif;
+  /* font-family: "Lato", Arial, sans-serif; */
   color: #000;
 }
 
@@ -22371,7 +22370,7 @@ h5,
     height: 100%;
     width: 100%;
     background: #fff;
-    font: 13px Helvetica, Arial, san-serif;
+    /* font: 13px Helvetica, Arial, san-serif; */
     display: inline-block;
     padding: 20px;
     float: right;
